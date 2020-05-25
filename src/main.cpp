@@ -25,7 +25,7 @@ int main(int argc, char** argv)
 	//Create detector
 	gpuprocess::INetBuilder* instance = gpuprocess::getNetBuilder("DETECTION_FACE");
 	gpuprocess::ITRTRuntime* inferenceDetector = instance->create(gpuprocess::INetBuilder::LOAD_FROM_MODEL,
-		"../ssd_face_detector_shufflenet_v2_640v_with_points_tensorrt_andrey_v.onnx", 1);
+		"../model.onnx", 1);
 	delete instance;
 	
 	//Allocate GPU/CPU space for Detector
