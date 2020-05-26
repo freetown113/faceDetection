@@ -11,6 +11,10 @@ cd build
 cmake ..
 make
 ```
+add path to external dependecies:
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/faceDetection/Plugins/cuda/lib
+```
 to launch project:
 ```
 ../bin/libil ../image
